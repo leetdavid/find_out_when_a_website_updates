@@ -15,6 +15,7 @@ optional arguments:
 ```
 
 ## find_when_page_updates.py
+This script requires download_page.py to be in the same working folder.
 ```
 usage: find_when_page_updates.py [-h] [-d DURATION] [-f FREQUENCY] [-o OUTPUT] [-v] urls [urls ...]
 
