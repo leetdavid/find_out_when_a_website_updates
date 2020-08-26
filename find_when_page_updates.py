@@ -34,8 +34,7 @@ def main(source_urls, duration, frequency, output='.', verbose=False):
             else:
                 oldfile[i] = newfile[i]
 
-        if(verbose):
-            print(f"[INFO] Downloaded pages at {datetime.datetime.now().isoformat()}, sleeping for {frequency} seconds...\n")
+        print(f"[INFO] {datetime.datetime.now().isoformat()}: sleeping for {frequency} seconds...\n")
         time.sleep(int(frequency))
 
 
