@@ -14,7 +14,7 @@ optional arguments:
   -v, --verbose         increase output verbosity
 ```
 
-## find_out_when_page_updates.py
+## find_when_page_updates.py
 ```
 usage: find_when_page_updates.py [-h] [-d DURATION] [-f FREQUENCY] [-o OUTPUT] [-v] urls [urls ...]
 
@@ -41,6 +41,6 @@ $ python download_page.py google.com -o out
 This will download google.com, and save it to a folder called 'out'.
 
 ```
-$ python find_out_when_page_updates.py https://www.shobserver.com/journal/getHomePage.htm http://paper.people.com.cn/rmrb/ -d 24 -f 5 -o out
+$ python find_when_page_updates.py https://www.shobserver.com/journal/getHomePage.htm http://paper.people.com.cn/rmrb/ -d 24 -f 5 -o out
 ```
 This will download the two pages mentioned, run for 24 hours, download every 5 seconds, and save the downloaded files to a folder called 'out'.
