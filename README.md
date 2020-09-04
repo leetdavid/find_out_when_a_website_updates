@@ -17,7 +17,7 @@ optional arguments:
 ## find_out_when_page_updates.py
 This script requires download_page.py to be in the same working folder.
 ```
-usage: find_out_when_page_updates.py [-h] [-d DURATION] [-f FREQUENCY] [-o OUTPUT] [-v] urls [urls ...]
+usage: find_out_when_page_updates.py [-h] [-d DURATION] [-p PERIOD] [-f FILE] [-o OUTPUT] [-v] [urls [urls ...]]
 
 Finds out when a page updates.
 
@@ -28,8 +28,9 @@ optional arguments:
   -h, --help            show this help message and exit
   -d DURATION, --duration DURATION
                         How long to run the script for, in hours. If not specified, it will run forever.
-  -f FREQUENCY, --frequency FREQUENCY
-                        frequency of checking, in seconds. Default is 60 seconds.
+  -p PERIOD, --period PERIOD
+                        period of checking, in seconds. Default is 60 seconds.
+  -f FILE, --file FILE  gets list to check from a file
   -o OUTPUT, --output OUTPUT
                         Saves the download page to a file. Default is ./out
   -v, --verbose         increase output verbosity
